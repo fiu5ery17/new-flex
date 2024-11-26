@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Message Example</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="福興雙周報">
+    <meta property="og:description" content="博雅好案推薦，包含聯絡資訊、服務項目和最新活動。">
+    <meta property="og:image" content="https://imgur.com/nAkpbme.png">
+    <meta property="og:url" content="https://your-url.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags for better preview on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://imgur.com/nAkpbme.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .carousel .bubble {
+            flex: 0 0 auto;
+            width: 300px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .bubble .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .bubble .body {
+            padding: 15px;
+        }
+        .bubble .footer {
+            padding: 10px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .button.primary {
+            background-color: #e61d2e;
+        }
+        .button.link {
+            background-color: transparent;
+            border: 1px solid #007bff;
+        }
+
+        /* Style for larger preview images */
+        .og-preview img {
+            width: 100%;
+            max-width: 800px; /* Adjust the size to make it bigger */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="og-preview">
+    <!-- Open Graph Image Preview -->
+    <img src="https://imgur.com/nAkpbme.png" alt="Preview Image">
+</div>
+
+<div class="carousel">
+    <!-- Bubble 1 -->
+    <div class="bubble">
+        <div class="hero">
+            <img src="https://imgur.com/B4PZINi.png" alt="Image">
+        </div>
+        <div class="body">
+            <h2>信義房屋-張博雅Mary</h2>
+            <p><strong>信義房屋股份有限公司-竹北福興店</strong></p>
+            <p>地址: 新竹縣竹北市福興東路二段83號</p>
+        </div>
+        <div class="footer">
+            <a href="tel://+886975347027" class="button primary">行動電話0975347027</a>
+            <a href="https://line.me/ti/p/f9hpdqcKuO" class="button link">加入line洽詢</a>
+        </div>
+    </div>
+    <!-- Bubble 2 -->
+    <div class="bubble">
+        <div class="hero">
+            <img src="https://imgur.com/m5ONkd0.png" alt="Image">
+        </div>
+        <div class="body">
+            <h2 style="color: #e61d2e;">【服務項目】</h2>
+            <ul>
+                <li><strong>1.市場行情提供</strong></li>
+                <li><strong>2.稅費估算</strong></li>
+                <li><strong>3.貸款資訊</strong></li>
+            </ul>
+            <h2 style="color: #e61d2e;">【居家修繕疑難雜症】</h2>
+            <p>修繕紗窗、開關插座等</p>
+        </div>
+        <div class="footer">
+            <a href="https://www.sinyi.com.tw/" class="button primary">信義房屋官網</a>
+            <a href="tel://+886-3-500-5000" class="button primary">分店電話03-500-5000</a>
+        </div>
+    </div>
+    <!-- Bubble 3 -->
+    <div class="bubble">
+        <div class="hero">
+            <img src="https://imgur.com/D42Ybpj.png" alt="Image">
+        </div>
+        <div class="body">
+            <h2>最新社區活動</h2>
+            <p>活動時間: 112/10/28 17:00</p>
+            <a href="https://line.me/ti/p/f9hpdqcKuO" class="button primary">點我報名</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
